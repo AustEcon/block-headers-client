@@ -3,16 +3,14 @@ version: "3.7"
 
 services:
   headersv:
-    image: headersv
-    build:
-      context: .
+    image: 709855634846.dkr.ecr.eu-west-2.amazonaws.com/headersv:latest
     volumes:
       - headersv-data:/tmp/jcl
     environment:
-        #bsv-mainnet | bsv-testnet
-      - SPRING_PROFILES_ACTIVE=bsv-testnet
+      #bsv-mainnet | bsv-testnet
+      - SPRING_PROFILES_ACTIVE=bsv-mainnet
 
-        #HeaderSV Application Configuration - Other properties can be found in src/main/resources/application-bsv-xxx.yml
+      #HeaderSV Application Configuration - Other properties can be found in src/main/resources/application-bsv-xxx.yml
       - HEADERSV_NETWORK_MINPEERS=2
       - HEADERSV_NETWORK_MAXPEERS=30
     ports:
