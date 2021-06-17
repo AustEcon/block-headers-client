@@ -3,7 +3,7 @@ version: "3.7"
 
 services:
   headersv:
-    image: 709855634846.dkr.ecr.eu-west-2.amazonaws.com/headersv:latest
+    image: 709855634846.dkr.ecr.eu-west-2.amazonaws.com/headersv:0.1.7
     volumes:
       - headersv-data:/tmp/jcl
     environment:
