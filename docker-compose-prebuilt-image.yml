@@ -11,7 +11,7 @@ services:
       - SPRING_PROFILES_ACTIVE=bsv-mainnet
 
       #HeaderSV Application Configuration - Other properties can be found in src/main/resources/application-bsv-xxx.yml
-      - _JAVA_OPTIONS=-XX:+UseContainerSupport -XX:MaxRAMPercentage=75
+      - _JAVA_OPTIONS=-XX:+UseContainerSupport -XX:MaxRAMPercentage=25
     ports:
       - 8080:8080
     network_mode: "host"
