@@ -13,8 +13,8 @@ services:
       #HeaderSV Application Configuration - Other properties can be found in src/main/resources/application-bsv-xxx.yml
       - _JAVA_OPTIONS=-XX:+UseContainerSupport -XX:MaxRAMPercentage=25
     ports:
-      - 8080:8080
-    network_mode: "host"
+      - 8001:8080
+
 volumes:
   headersv-data:
     external: false
